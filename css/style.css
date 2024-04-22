@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+::selection{
+  background-color: black;
+  color: rgb(239, 194, 31);
+}
 
 /* header{
     background-image: url(../assets/hero.jpg);

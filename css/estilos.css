@@ -23,6 +23,18 @@ header h1 {
   font-size: 60px;
   font-weight: bolder;
   text-shadow: 0px 5px 10px black;
+  animation: pulse 3s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 header #btn-uno {
   text-shadow: 5px 0px 10px black;
@@ -31,6 +43,7 @@ header #btn-uno {
 header #btn-uno:hover {
   text-shadow: none;
   background-color: rgb(249, 177, 44);
+  transform: scale(1.05);
 }
 header .hero {
   background-color: rgba(0, 0, 0, 0);

@@ -85,6 +85,19 @@ header nav .dropdown-item:hover {
   color: rgb(239, 194, 31);
 }
 
+#tarjetas {
+  background-image: url(../assets/backgorund.jpg);
+}
+
+.col-md-4 {
+  display: flex;
+  align-items: stretch;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 /* INICIO ESTILOS FOOTER */
 ul {
   list-style-type: none;

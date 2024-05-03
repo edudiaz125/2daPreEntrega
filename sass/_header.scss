@@ -43,6 +43,7 @@ header{
     height: 86vh;
     }
     
+
     /* INICIO ESTILOS NAVBAR */
     & nav{
         background-color: rgb(246, 243, 236);
@@ -83,4 +84,20 @@ header{
     }
     }
      /* FIN ESTILOS NAVBAR */
+}
+
+// main{
+   
+// }
+
+#tarjetas{
+    background-image: url(../assets/backgorund.jpg);
+}
+.col-md-4{
+
+    display: flex;
+    align-items: stretch;
+}
+.card{
+    background-color:  rgba(255, 255, 255, 0.3);
 }

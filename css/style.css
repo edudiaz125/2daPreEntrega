@@ -21,13 +21,21 @@ body{
     height: 86vh;
 }
 
+#tarjetas{
+  background-image: url(../assets/backgorund.jpg);
+}
+
+
 /* INICIO ESTILOS NAVBAR */
 .navbar-brand span{
     color:  rgb(239, 194, 31);
     font-weight: bold;
 }
 .navbar {
-    background-color: rgb(246, 243, 236);
+    /* background-color: rgb(246, 243, 236); */
+    background-image: url(../assets/backgorund.jpg);
+    background-size: cover;
+    background-position: center;
     height: 80px;
     margin: 20px 10px;
     border-radius: 30px;
@@ -238,7 +246,7 @@ ul{
 
 .container-paq{
     padding: 50px;
-    /* background-color: antiquewhite; */
+    background-image: url(../assets/backgorund.jpg);
     color: rgb(255, 255, 255);
     text-shadow: 5px 0px 10px black;
     width: 100%;
@@ -250,7 +258,7 @@ ul{
         "paq4 paq3 paq2 paq2"
         "paq1 paq1 paq5 paq6"
     ;
-    gap: 6px;
+    gap: 10px;
 }
 
 .paq1{
@@ -280,6 +288,7 @@ ul{
     background-size: cover;
     background-position: center;
     grid-area: paq4;
+
 }
 .paq5{
     background-color: rgb(76, 0, 255);
@@ -287,6 +296,7 @@ ul{
     background-size: cover;
     background-position: center;
     grid-area:paq5;
+
 }
 .paq6{
     background-color: rgb(181, 41, 209);
@@ -294,6 +304,7 @@ ul{
     background-size: cover;
     background-position: center;
     grid-area:paq6;
+
 }
 .container-paq > div {
     display: grid;
@@ -303,7 +314,9 @@ ul{
 }
 .container-paq > div:hover{
   transform: scale(1.02);
+  box-shadow: 2px 0px 10px rgb(0, 0, 0);
 }
+
 @media screen and (max-width: 780px){
     .container-paq{
         grid-template-columns: 1fr 1fr;
@@ -464,10 +477,10 @@ video{
 }
 /* INICIO CAJA OPINIONES */
 .opiniones{
-    background-color: rgb(246, 243, 236);
+    background-image: url(../assets/backgorund.jpg);
 }
 .caja-op{
-    margin: 20px;
+    /* margin: 0px; */
     padding: 10px;
     display: flex;
     flex-wrap: wrap;

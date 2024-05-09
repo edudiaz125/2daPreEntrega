@@ -79,85 +79,140 @@ body{
   }
 
 
+/* ============================================= */
+/* =============INICIO ESTILOS FOOTER=========== */
+/* ============================================= */
 
-/* INICIO ESTILOS FOOTER */
-ul{
-    list-style-type: none;
+footer{
+  background-color: rgb(239, 194, 31);
+  background-image: url(../assets/background-yellow.jpg);
+  background-size: cover;
+  padding: 1rem 3rem;
 }
-.footer-container{
-    max-width: 1200px;
-    margin: 0 auto;
+
+.container-footer{
+  display: flex;
+  flex-direction: column;
+  margin: 0 10%;
 }
-.footer{
-    background-color: rgb(246, 184, 51);
-    padding: 80px 0;
+/* =======MENU FOOTER======= */
+.menu-footer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  color: #fff;
+  padding-bottom: 1.2rem;
+  line-height: 1.8rem;
 }
-.footer-row{
+/* ******INFORMACION****** */
+.info-contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.social-icons{
+  /* background-color: rgb(255, 124, 224); */
+  display: flex;
+  gap: 1.4rem;
+}
+
+.social-icons a i{
+  color: #fff;
+  font-size: 1.2rem;
+  border: 2px solid white;
+  padding: 0.4rem;
+  border-radius: 50%; 
+  transition: all 0.6s ease;
+}
+
+.social-icons a i:hover{
+  background-color: rgb(0, 0, 0);
+  color:  rgb(255, 208, 0);
+  border: 2px solid rgb(0, 0, 0);
+  box-shadow: 1px 2px 5px white;
+  transform: scale(1.1);
+}
+
+/* ******MI CUENTA****** */
+.my-account{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: capitalize;
+}
+.title-footer{
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.my-account ul li a:hover{
+  color: black;
+  padding-left: 5px;
+}
+
+/* ******BOLETIN INFORMATIVO****** */
+.informative{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.informative form{
+  display: flex;
+
+}
+.informative form input{
+  color: #777;
+  background-color: #fff9e3;
+  border-radius: 15px;
+  width: 18rem;
+  height: 2.5rem;
+}
+.informative .btn{
+  box-shadow:0 0 10px #fff;
+}
+.informative .btn:hover{
+  box-shadow:0 0 10px #b08a0e;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.info-contact ul,
+.my-account ul{
+  list-style-type: none;
+}
+.my-account ul a{
+  text-decoration: none;
+  color: #fff;
+}
+
+/* =======COPYRIGHT FOOTER======= */
+.copyright{
     display: flex;
-    flex-wrap: wrap;
-}
-.footer-links{
-    width: 25%;
-    padding: 0 15px;
-    /* border: 1px solid; */
-    display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    padding-top: 1rem;
 }
-.footer-links h4{
-    font-size: 25px;
-    color: white;
-    margin-bottom: 20px;
-    font-weight: 500;
-    border-bottom: 2px solid black;
-    padding-bottom: 5px;
-    display: inline-block;
-}
-.footer-links ul li a{
-    color: rgb(235, 241, 220);
-    font-size: 18px;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 10px;
-    transition:all .3s ease;
+.p-copyright{
+  margin: 0;
+  color: #777;
+  font-weight: 500;
 }
 
-.footer-links ul li a:hover{
-    color:black;
-    padding-left: 5px;
-}
 
-.social-links a{
-    display: inline-block;
-    min-height: 40px;
-    width: 40px;
-    background-color: rgba(255,255,255, 0.2);
-    margin: 0 10px 10px 0;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    color: white;
-    transition: all .5 ease;
-}
-.social-links a:hover{
-    background-color: black;
-}
-
-@media (max-width:990px){
-    .footer-row{
-        text-align: center;
-    }
-    .footer-links{
-        width: 100%;
-        margin-bottom: 20px;
-    }
-}
-/* FIN ESTILOS FOOTER */
+/* ============================================= */
+/* =============FIN ESTILOS FOOTER============== */
+/* ============================================= */
 
 
 
-/* 2- INICIO ESTILO "QUIENES SOMOS" */
-/* 2- INICIO ESTILO "QUIENES SOMOS" */
+/* ============================================= */
+/* ========INICIO ESTILOS QUIENES SOMOS========= */
+/* ============================================= */
 .select-qs:nth-child(2) a{
   color: rgb(246, 184, 51);
   text-shadow:0px 0px 10px  rgba(246, 184, 51, 0.665);
@@ -197,13 +252,15 @@ ul{
     flex-direction: column;
   }
 }
-/* FIN ESTILO "QUIENES SOMOS" */
-/* FIN ESTILO "QUIENES SOMOS" */
+/* ============================================= */
+/* ==========FIN ESTILOS QUIENES SOMOS========== */
+/* ============================================= */
 
 
 
-/* 3- INICIO ESTILOS "PAQUETES" */
-/* 3- INICIO ESTILOS "PAQUETES" */
+/* ============================================= */
+/* ==========INICIO ESTILOS PAQUETES============ */
+/* ============================================= */
 .select-paq:nth-child(3) a{
   color: rgb(246, 184, 51);
   text-shadow:0px 0px 10px  rgba(246, 184, 51, 0.665);
@@ -352,18 +409,25 @@ ul{
   color: rgb(246, 184, 51);
   text-shadow:0px 0px 10px  rgba(246, 184, 51, 0.665);
 }
+
+.contact{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  background-color: #ffffffbe;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  gap: 2rem;
+}
 .container-log{
-    max-width: 400px;
-    margin: 50px auto;
+    width: 30rem;
+    /* margin: 3rem auto; */
     padding: 20px;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 1.5rem;
     box-shadow: 0px 0px 10px rgb(255, 255, 255);
   }
-  
-  h2 {
-    text-align: center;
-  }
+
   
   form {
     display: flex;
@@ -386,26 +450,26 @@ ul{
   
 
   .container-contacto {
-    max-width: 400px;
-    margin: 50px auto;
+    width: 30rem;
+    /* margin: 3rem 1rem; */
     padding: 20px;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 1.5rem;
     box-shadow: 0px 0px 10px rgb(255, 255, 255);
   }
   
-  h2 {
+  .h3-contact {
     text-align: center;
   }
   
-  form {
+  /* form {
     display: flex;
     flex-direction: column;
-  }
+  } */
   
-  label {
+  /* label {
     margin-bottom: 5px;
-  }
+  } */
   
   input[type="text"],
   input[type="email"],

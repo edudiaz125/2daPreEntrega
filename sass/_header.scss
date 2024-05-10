@@ -7,11 +7,10 @@ header{
     height: 100vh;
 
     & h1{
-    color: white;
     font-family: $font1;
     font-size: 60px;
     font-weight: bolder;
-    text-shadow: 0px 5px 10px black;
+    text-shadow: 0px 5px 10px $color2;
     // background: rgba(5, 12, 7, 0.5);
     animation: pulse 3s infinite;
     }
@@ -46,28 +45,28 @@ header{
 
     /* INICIO ESTILOS NAVBAR */
     & nav{
-        background-color: rgb(246, 243, 236);
+        background-color: $color3;
         height: 80px;
         margin: 20px 10px;
         border-radius: 30px;
         padding: 0.5rem;
 
     .navbar-brand span{
-        color:  rgb(239, 194, 31);
+        color: $color1;
         font-weight: bold;
     }
     .login-button{
-        color:  rgb(239, 194, 31);
+        color: $color1;
         padding: 4px 15px;
         border-radius: 20px;
         text-decoration: none;
         margin: 0 10px;
         font-weight: bold;
-        border: 2px solid rgb(239, 194, 31);
+        border: 2px solid $color1;
     }
     .login-button:hover{
-        background-color:rgb(239, 194, 31);
-        color:black;
+        background-color: $color1;
+        color:$color2;
         transition: 0.2s;
         font-weight: bold;
     }
@@ -77,27 +76,183 @@ header{
     }
 
     .nav-link:hover{
-        color: rgb(239, 194, 31);
+        color: $color1;
     }
     .dropdown-item:hover{
-        color: rgb(239, 194, 31);
+        color: $color1;
     }
     }
      /* FIN ESTILOS NAVBAR */
 }
 
-// main{
-   
-// }
+main{
 
-#tarjetas{
     background-image: url(../assets/backgorund.jpg);
-}
-.col-md-4{
+    
 
-    display: flex;
-    align-items: stretch;
-}
-.card{
-    background-color:  rgba(255, 255, 255, 0.3);
+    &
+    section{
+        &
+        .col-md-4{
+            display: flex;
+            align-items: stretch;
+            margin-bottom: 2rem;
+        }
+        .card{
+            background-color: $color3;
+        }
+    }    
+
+    .options{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+
+        &
+        .heading-2{
+            letter-spacing: 10px;
+        }
+        .container-options{
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+
+            &
+            span{
+                color: $color2;
+                background-color: $color3;
+                padding: 0.4rem 2rem;
+                font-size: 1.2rem;
+                text-transform: capitalize;
+                border-radius: 1.5rem;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                
+            }
+            .active{
+                background-color: $color1;
+                box-shadow: 0 0 4px $color4;
+                color: $color3;
+            }
+
+            span:hover{
+                background-color: $color1;
+                box-shadow: 0 0 4px $color4;
+                color: $color3;
+                // font-weight: bold;
+            }
+
+        }
+    }
+    
+
+    // GALLERY SCROLLBAR
+    .gallery-container{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2rem; 
+
+    }
+    #gallery{
+        height: 40rem;
+        width: 60rem;
+        display: flex;
+        flex-wrap: nowrap;
+        // margin: 2rem 3rem;
+        overflow: scroll;
+    }
+
+    #gallery::-webkit-scrollbar{
+        width: 10px;
+    }
+    #gallery::-webkit-scrollbar-thumb{
+        background: $color1;
+        border-radius: 8px;
+    }
+    #gallery::-webkit-scrollbar-thumb:hover{
+        background: rgb(255, 208, 122);
+    }
+
+
+    /*========= MEDIA QUERIES =========*/
+    /*========= TABLET 768px =========*/
+    @media (max-width: 768px){
+        
+        
+        
+        .options{
+            &
+            .heading-2{
+                letter-spacing: 2px;
+            }
+            .container-options{
+                gap: 1rem;
+
+                &
+                span{
+                    padding: 0.2rem 1.5rem;
+                    font-size: 1.1rem;
+                    border-radius: 1.3rem;
+                }
+            }
+        }
+
+        .gallery-container{
+            margin: 0 1rem;
+        }
+        #gallery{
+            
+            height: 30rem;
+            width: 45rem;
+        }
+        #gallery::-webkit-scrollbar{
+            width: 0px;
+        }
+    }
+
+    /*========= MEDIA QUERIES =========*/
+    /*========= MOVIL L 425px =========*/
+    @media (max-width: 425px){
+        
+        
+        
+        .options{
+            &
+            .heading-2{
+                letter-spacing: 2px;
+            }
+            .container-options{
+                gap: 0.5rem;
+
+                &
+                span{
+                    padding: 0.2rem 1rem;
+                    font-size: 0.9rem;
+                    border-radius: 1rem;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .gallery-container{
+            margin: 0 0.5rem;
+        }
+        #gallery{
+            
+            height: 20rem;
+            width: 30rem;
+        }
+        #gallery::-webkit-scrollbar{
+            width: 0px;
+        }
+        #gallery::-webkit-scrollbar-thumb{
+            background: $color1;
+
+        }
+        
+    }
+
+//FIN MAIN
 }

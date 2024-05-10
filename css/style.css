@@ -293,21 +293,55 @@ footer{
   height: 90vh;
   margin-left: 10%;
   color: #fff;
-
-  /* background-color: #ffffff8c; */
 }
 
 .banner-somos h1{
-  font-size: 4rem;
+  font-size: 6rem;
   margin-bottom: 0;
+  line-height: 5rem;
+
+  animation-name: animacionEspaciado;
+  animation-duration: 2s;
+  animation-iteration-count: initial;
 }
+@keyframes animacionEspaciado {
+  0% {
+    letter-spacing: normal;
+  }
+  50% {
+    letter-spacing: 0.2rem; 
+  }
+  100% {
+    letter-spacing: normal; 
+  }
+}
+
 .banner-somos p{
   color: rgb(246, 184, 51);
   text-transform: uppercase;
+  padding-left: 0.5rem;
+  font-size: 1.5rem;
+}
+.btn-somos{
+  padding: 0.4rem 1.5rem;
+  background-color: rgb(246, 184, 51);
+  border-radius: 1.2rem;
+  color: #fff;
+  margin-left: 1rem;
+}
+.btn-somos a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+.btn-somos:hover{
+  background-color:rgba(0, 0, 0, 0.379);
+  box-shadow: 0 0 15px rgb(246, 196, 13);
 }
 
+/* ESTILOS MAIN */
 .quienessomos{
-  background-color: rgb(246, 243, 236);
+  background-image: url(../assets/backgorund.jpg);
   padding: 20px 0px;
 }
 .trayectoria {
@@ -322,7 +356,7 @@ footer{
   flex-direction: column;
 }
 .trayectoria .tray-foto img {
-  width: 90%;
+  width: 18rem;
   border: 4px solid rgb(248, 191, 2);
 }
 
@@ -333,14 +367,53 @@ footer{
   align-items: center;
   gap: 2em;
 }
+.quienessomos .container h2{
+    font-size: 1.8rem;
+  }
 .trayectoria .tray-texto p {
   margin-bottom: 0;
 }
-@media screen and (max-width: 480px) {
-  .trayectoria {
-    flex-direction: column;
+
+/*========= MEDIA QUERIES =========*/
+/*========== TABLET 768px =========*/
+@media (max-width: 768px){
+  .banner-somos h1{
+    font-size: 5rem;
+    margin-bottom: 0;
+    line-height: 4.2rem;
+  }
+  .banner-somos p{
+    font-size: 1.2rem;
   }
 }
+  
+  /*========= MEDIA QUERIES =========*/
+  /*========= MOVIL L 425px =========*/
+@media (max-width: 430px) {
+  .trayectoria {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quienessomos .container h1,
+  h2{
+    display: flex;
+    justify-content: center;
+  }
+
+  .banner-somos h1{
+      font-size: 4rem;
+      line-height: 3.5rem;
+  }
+  .banner-somos p{
+    font-size: 1rem;
+  }
+
+  .btn-somos{
+    padding: 0.2rem 1rem;
+  }
+  }
+
 /* ============================================= */
 /* ==========FIN ESTILOS QUIENES SOMOS========== */
 /* ============================================= */
@@ -350,6 +423,11 @@ footer{
 /* ============================================= */
 /* ==========INICIO ESTILOS PAQUETES============ */
 /* ============================================= */
+.body-paquetes{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.398),rgba(0, 0, 0, 0.119)), url(../assets/background-paquetes.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
 .select-paq:nth-child(3) a{
   color: rgb(246, 184, 51);
   text-shadow:0px 0px 10px  rgba(246, 184, 51, 0.665);
@@ -494,6 +572,12 @@ footer{
 
 /* 4- INICIO ESTILO "CONTACTOS" */
 /* 4- INICIO ESTILO "CONTACTOS" */
+.body-contacto{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.398),rgba(0, 0, 0, 0.119)), url(../assets/background-contacto.jpg);
+  /* background-attachment: fixed; */
+  background-size: cover;
+}
+
 .select-cnt:nth-child(4) a{
   color: rgb(246, 184, 51);
   text-shadow:0px 0px 10px  rgba(246, 184, 51, 0.665);
@@ -551,15 +635,6 @@ footer{
     text-align: center;
   }
   
-  /* form {
-    display: flex;
-    flex-direction: column;
-  } */
-  
-  /* label {
-    margin-bottom: 5px;
-  } */
-  
   input[type="text"],
   input[type="email"],
   textarea,
@@ -592,6 +667,11 @@ footer{
 
 /* 5- INICIO ESTILOS "TOP 5" */
 /* 5- INICIO ESTILOS "TOP 5" */
+.body-top5{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.398),rgba(0, 0, 0, 0.119)), url(../assets/background-top5.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
 .select-top:nth-child(5) a{
   color: rgb(246, 184, 51);
   text-shadow:0px 0px 10px  rgba(246, 184, 51, 0.665);

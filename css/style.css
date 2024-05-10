@@ -8,6 +8,7 @@
   color: rgb(239, 194, 31);
 }
 
+
 body{
     background-image: url(../assets/hero.jpg);
     background-attachment: fixed;
@@ -70,11 +71,8 @@ body{
 /* ============= FIN ESTILOS NAVBAR =========== */
 /* ============================================= */
 
-/* #tarjetas{
-    background-color: rgb(246, 243, 236);
-    height: auto;
-}
-.btn{
+
+/*.btn{
     margin: 0 30px;
   } */
 
@@ -276,10 +274,38 @@ footer{
 /* ============================================= */
 /* ========INICIO ESTILOS QUIENES SOMOS========= */
 /* ============================================= */
+
+.body-somos{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.398),rgba(0, 0, 0, 0.119)), url(../assets/background-quienessomos.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
 .select-qs:nth-child(2) a{
   color: rgb(246, 184, 51);
   text-shadow:0px 0px 10px  rgba(246, 184, 51, 0.665);
 }
+
+.container-somos{
+  display: flex;
+  align-items: center;
+  height: 90vh;
+  margin-left: 10%;
+  color: #fff;
+
+  /* background-color: #ffffff8c; */
+}
+
+.banner-somos h1{
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+.banner-somos p{
+  color: rgb(246, 184, 51);
+  text-transform: uppercase;
+}
+
 .quienessomos{
   background-color: rgb(246, 243, 236);
   padding: 20px 0px;

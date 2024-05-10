@@ -8,12 +8,9 @@
   color: rgb(239, 194, 31);
 }
 
-/* header{
-    background-image: url(../assets/hero.jpg);
-    height: 100vh;
-} */
 body{
     background-image: url(../assets/hero.jpg);
+    background-attachment: fixed;
     height: 100vh;
 }
 .hero{
@@ -26,7 +23,9 @@ body{
 }
 
 
-/* INICIO ESTILOS NAVBAR */
+/* ============================================= */
+/* =============INICIO ESTILOS NAVBAR=========== */
+/* ============================================= */
 .navbar-brand span{
     color:  rgb(239, 194, 31);
     font-weight: bold;
@@ -67,16 +66,17 @@ body{
 .dropdown-item:hover{
     color: rgb(239, 194, 31);
 }
-/* FIN ESTILOS NAVBAR */
+/* ============================================= */
+/* ============= FIN ESTILOS NAVBAR =========== */
+/* ============================================= */
 
-#tarjetas{
+/* #tarjetas{
     background-color: rgb(246, 243, 236);
-    /* background-color:black; */
     height: auto;
 }
 .btn{
     margin: 0 30px;
-  }
+  } */
 
 
 /* ============================================= */
@@ -93,7 +93,7 @@ footer{
 .container-footer{
   display: flex;
   flex-direction: column;
-  margin: 0 10%;
+  margin: 0 8%;
 }
 /* =======MENU FOOTER======= */
 .menu-footer{
@@ -103,6 +103,7 @@ footer{
   border-bottom: 1px solid rgb(255, 255, 255);
   color: #fff;
   padding-bottom: 1.2rem;
+  font-size: 1.2rem;
   line-height: 1.8rem;
 }
 /* ******INFORMACION****** */
@@ -203,6 +204,68 @@ footer{
   font-weight: 500;
 }
 
+
+
+/*========= MEDIA QUERIES =========*/
+/*========= TABLET 768px =========*/
+@media (max-width: 768px) {
+  footer {
+    margin: 0 0;
+    padding: 1rem;
+  }
+  footer .container-footer {
+    margin: 0 5%;
+  }
+  footer .container-footer .menu-footer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    border-bottom: 1px solid rgb(255, 254, 249);
+    color: rgb(255, 254, 249);
+    padding-bottom: 1.1rem;
+    line-height: 1.6rem;
+  }
+  footer .container-footer .menu-footer .informative form input {
+    width: 15rem;
+  }
+  footer .container-footer .menu-footer .my-account {
+    display: none;
+  }
+  footer .container-footer .copyright {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .my-account {
+    display: none;
+  }
+}
+/*========= MEDIA QUERIES =========*/
+/*========= MOVIL L 425px =========*/
+@media (max-width: 425px) {
+  footer {
+    margin: 0 0;
+    padding: 1rem;
+  }
+  footer .container-footer .menu-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 1px solid rgb(255, 254, 249);
+    color: rgb(255, 254, 249);
+    padding-bottom: 1.1rem;
+    line-height: 1.6rem;
+  }
+  footer .container-footer .menu-footer .informative form input {
+    width: 15rem;
+  }
+  footer .container-footer .copyright {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
 
 /* ============================================= */
 /* =============FIN ESTILOS FOOTER============== */
